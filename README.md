@@ -13,22 +13,31 @@ Clipy is a Clipboard extension app for macOS.
 
 ---
 
-__Requirement__: macOS 10.10 Yosemite or higher
+__Requirement__: macOS 13.0 Ventura or higher
 
 __Distribution Site__ : <https://clipy-app.com>
 
 <img src="http://clipy-app.com/img/screenshot1.png" width="400">
 
 ### Development Environment
-* macOS 10.15 Catalina
-* Xcode 12.2
-* Swift 5.3
+* macOS 13.0 Ventura
+* Xcode 14
+* Swift 5.7
+* Ruby 3.0.5
 
 ### How to Build
-0. Move to the project root directory
-1. `bundle install --path=vendor/bundle && bundle exec pod install`
-2. Open `Clipy.xcworkspace` on Xcode.
-3. build.
+1. Install Homebrew
+2. Install Rbenv
+3. Install Ruby with Rbenv
+4. Move to the project root directory
+5. Execute the following command
+    ```bash
+    bundle config set --local path 'vendor/bundle'
+    bundle install
+    bundle exec pod install
+    ```
+6. Open `Clipy.xcworkspace` on Xcode.
+7. build.
 
 ### Contributing
 1. Fork it ( https://github.com/Clipy/Clipy/fork )
